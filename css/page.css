@@ -23,7 +23,11 @@ body {
 
 .meal-item {
     color: #ff9966;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    border: 2px solid #ff9966;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 15px 15px #CCCCCC;
 }
 
 .meal-item>h2, .meal-item>h3 {
