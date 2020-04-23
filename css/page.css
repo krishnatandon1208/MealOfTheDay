@@ -1,0 +1,46 @@
+html,
+body {
+    margin: 0;
+    font-family: 'Aclonica', sans-serif;
+}
+
+.mdc-top-app-bar {
+    top: 0;
+}
+
+.meal-heading {
+    background: #ff9966;
+    background: -webkit-linear-gradient(to bottom, #ff5e62, #ff9966);
+    background: linear-gradient(to bottom, #ff5e62, #ff9966);
+    color: #FFFFFF;
+}
+
+.main-block {
+    position: relative;
+    top: 100px;
+    margin: 0 20px;
+}
+
+.meal-item {
+    color: #ff9966;
+    margin-bottom: 60px;
+}
+
+.meal-item>h2, .meal-item>h3 {
+    margin: 10px 0;
+}
+
+.custom-mdc-button:not(:disabled) {
+    color: #FFFFFF;
+    background: #ff9966;
+}
+
+.custom-mdc-button-text {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.mdc-button .mdc-button__ripple::before, .mdc-button .mdc-button__ripple::after {
+    color: #FFFFFF;
+    background: #ff5e62;
+}

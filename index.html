@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal of the Day</title>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+</head>
+
+<body>
+
+    <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section d-flex jc-center meal-heading">
+                <h1 class="text-uppercase">Meal of the day</h1>
+            </section>
+        </div>
+    </header>
+
+    <main class="main-block">
+
+        <div id="breakfast" class="meal-item">
+            <h2 class="text-uppercase">Breakfast</h2>
+            <h3>Breakfast 🍳🥚 🍞🥛 is the most important meal. Do eat some fruits 🍎🍐🍉🍒🍍🥝</h3>
+            <span>Today's</span>
+            <button class="mdc-button custom-mdc-button" id="breakfastSelector" onclick="CreateMyMeal.getBreakfast(id)">
+                <div class="mdc-button__ripple custom-mdc-button__ripple"></div>
+                <span class="mdc-button__label custom-mdc-button-text">breakfast</span></span>
+            </button>
+            <span> is: </span>
+            <span id="myBreakfast"></span>
+        </div>
+
+        <div id="lunch" class="meal-item">
+            <h2 class="text-uppercase">Lunch</h2>
+            <h3>Ideal time for having lunch 🍱🍚 is 13:00 hrs. Do include some fresh green 🥗🥦🥒🥬</h3>
+            <span>Today's</span>
+            <button class="mdc-button custom-mdc-button" id="lunchSelector" onclick="CreateMyMeal.getLunch(id)">
+                <div class="mdc-button__ripple custom-mdc-button__ripple"></div>
+                <span class="mdc-button__label custom-mdc-button-text">lunch</span></span>
+            </button>
+            <span> is: </span>
+            <span id="myLunch"></span>
+        </div>
+
+        <div id="snacks" class="meal-item">
+            <h2 class="text-uppercase">Snacks</h2>
+            <h3>Some light-weighted snacks 🥪🍿🍩🍪🌮🍟 with tea🍵 or coffee ☕️</h3>
+            <span>Today's</span>
+            <button class="mdc-button custom-mdc-button" id="snacksSelector" onclick="CreateMyMeal.getSnacks(id)">
+                <div class="mdc-button__ripple custom-mdc-button__ripple"></div>
+                <span class="mdc-button__label custom-mdc-button-text">snacks</span></span>
+            </button>
+            <span> is: </span>
+            <span id="mySnacks"></span>
+        </div>
+
+        <div id="dinner" class="meal-item">
+            <h2 class="text-uppercase">Dinner</h2>
+            <h3>Lightest meal of the day 🥘🍱</h3>
+            <span>Today's</span>
+            <button class="mdc-button custom-mdc-button" id="dinnerSelector" onclick="CreateMyMeal.getDinner(id)">
+                <div class="mdc-button__ripple custom-mdc-button__ripple"></div>
+                <span class="mdc-button__label custom-mdc-button-text">dinner</span></span>
+            </button>
+            <span> is: </span>
+            <span id="myDinner"></span>
+        </div>
+
+        <div id="sweets" class="meal-item">
+            <h2 class="text-uppercase">Have some sweets 🧁🍦🍰🍧</h2>
+            <h3 id="mySweets">Sweets to eat are : </h3>
+        </div>
+    </main>
+
+    <script src="script/meal.js"></script>
+</body>
+
+</html>
